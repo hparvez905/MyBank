@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body  class=" bg-zinc-400 p-8">
+    <header>
+        <h1 class="text-5xl text-center mt-5">Let's get some <span class="font-bold text-red-400">Moooooney!!</span>
+        </h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3">
+                <div class="bg-emerald-500 p-8 w-8/12 mx-auto rounded text-white">
+                    <h3 class="text-2xl">Deposit</h1>
+                        <h1 class="text-4xl">$<span id="deposit">00</span></h1>
+                </div>
+                <div class="bg-yellow-500 p-8 w-8/12 mx-auto rounded text-white">
+                    <h3 class="text-2xl">Withdrow</h1>
+                        <h1 class="text-4xl">$ <span id="withdrow-total">00</span></h1>
+                </div>
+                <div class="bg-violet-500 p-8 w-8/12 mx-auto rounded text-white">
+                    <h3 class="text-2xl">Balance</h1>
+                        <h1 class="text-4xl">$ <span id="balance-total">1240</span></h1>
+                </div>
+        </section>
+
+        <section class="mt-12">
+            <div class="grid grid-cols-2">
+                <div class="bg-blue-400 p-8 w-8/12 mx-auto rounded">
+                    <h3 class="text-2xl mb-3"> Please Deposit</h3>
+                        <input class="block mb-2 w-9/12 p-1" type="text" name="" id="amount-input"
+                            placeholder="$ Amount you want to deposit">
+                        <button id="deposit-btn"
+                            class=" text-white bg-indigo-500 hover:bg-indigo-800 rounded-md block mt-2 px-3 py-1 text-white text-2xl">Deposit
+                        </button>
+                </div>
+                <div class="bg-sky-400 p-8 w-8/12 mx-auto rounded">
+                    <h3 class="text-2xl mb-3"> Please Withdrow</h3>
+                        <input class="block mb-2 w-9/12 p-1" type="text" name="" id="withdrow-input"
+                            placeholder="$ Amount you want to withdrow">
+                        <button id="withdrow-btn"
+                            class="text-white bg-indigo-500 hover:bg-indigo-800 rounded-md block mt-2 px-3 py-1 text-white text-2xl">Withdrow
+                        </button>
+                </div>
+            </div>
+            <div>
+                <button class="flex justify-items-center bg-stone-600 hover:bg-stone-800 rounded-md block mt-3 px-4 py-2 text-white text-2xl"><a href="index.html">Log Out</a></button>
+            </div>
+        </section>
+    </main>
+<script src="money.js"></script>
+<script src="withdrow.js"></script>
+</body>
+
+</html>
